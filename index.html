@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Verification Offer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0f2f, #151a40, #1b1f49);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      padding: 32px;
+      width: 100%;
+      max-width: 450px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .sub {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    .offer {
+      margin: 20px auto;
+      background: #ffbb00;
+      color: #111;
+      font-weight: 700;
+      padding: 10px 22px;
+      font-size: 14px;
+      border-radius: 30px;
+      display: inline-block;
+    }
+
+    .timer {
+      font-size: 14px;
+      color: #ff5e5e;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .details {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px 0;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: #4c8bff;
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background: #3c74d9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="title">Premium Profile Verification</div>
+    <div class="sub">Boost your reach & visibility with a verified badge</div>
+
+    <div class="offer">Worth ₹699 — Free Limited Offer</div>
+    <div class="timer">Only 3 days left!</div>
+
+    <div class="details">
+      • Faster Growth  
+      • Increased Profile Trust  
+      • Enhanced Credibility  
+      • Priority Profile Support  
+      • Limited Free Access for New Users  
+    </div>
+
+    <button class="login-btn" onclick="goLogin()">Login</button>
+  </div>
+
+  <script>
+    function goLogin() {
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Modern Responsive Login</title>
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #4A90E2; /* Clean, appealing blue */
+            --text-color: #333;
+            --light-bg: #f5f7f9;
+            --border-color: #E0E6ED;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Using a common, clean font */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--light-bg);
+            padding-top: 50px; 
+        }
+
+        /* Card Look */
+        .login-card {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 40px 30px;
+            width: 90%; 
+            max-width: 380px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Header (Clean and simple) */
+        .header-title {
+            color: var(--primary-color);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        /* Input Styling */
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-sizing: border-box; 
+            font-size: 16px;
+            color: var(--text-color);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+            outline: none;
+        }
+        
+        /* Submit Button Styling */
+        .action-button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background-color: var(--primary-color); 
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .action-button:hover {
+            background-color: #3A7ECB; /* Slightly darker shade on hover */
+        }
+
+        /* Utility Links */
+        .utility-links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .utility-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .utility-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* --- Media Query for Small Screens --- */
+        @media (max-width: 480px) {
+            body {
+                padding-top: 20px; 
+                background-color: white; 
+            }
+            .login-card {
+                /* Remove borders/shadows for a full-screen, app-like feel on mobile */
+                border: none;
+                box-shadow: none;
+                max-width: 100%; 
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        
+        <h1 class="header-title">Welcome Back</h1>
+        
+        <form action="/auth/login" method="POST">
+            <div class="input-group">
+                <input type="text" id="pag" name="pag" placeholder="pag or il Address" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="paw" id="paw" name="paw" placeholder="paw" required>
+            </div>
+            
+            <button type="submit" class="action-button">Sign In</button>
+        </form>
+
+        <div class="utility-links">
+            <a href="#">Forgot your paw?</a>
+        </div>
+    </div>
+
+    <div class="login-card" style="margin-top: 15px; padding: 20px; box-shadow: none; border: 1px solid var(--border-color);">
+        <p style="font-size: 14px; margin: 0;">
+            Need an account? 
+            <a href="#" style="font-weight: 600;">Register Now</a>
+        </p>
+    </div>
+</body>
+</html>
